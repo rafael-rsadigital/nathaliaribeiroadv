@@ -19,10 +19,5 @@ const updateHeader = () => siteHeader?.classList.toggle('is-scrolled', window.sc
 updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
 
-document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const note = document.querySelector('#form-note');
-  if (note) note.textContent = 'Obrigado. Este formulário está pronto para receber uma integração de envio.';
-});
 
 document.querySelector('#year').textContent = new Date().getFullYear();
