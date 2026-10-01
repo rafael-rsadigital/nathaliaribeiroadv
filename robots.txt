@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nathaliaribeiro.adv.page/sitemap.xml
+Sitemap: https://nathaliaribeiro.adv.br/sitemap.xml
