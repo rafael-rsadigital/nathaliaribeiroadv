@@ -185,3 +185,9 @@ html.js .reveal.is-visible {
   .home-page .hero{background-position:61% 42%}
 }
 @media(max-width:430px){.home-page .hero{background-position:61% 40%}}
+@media(max-width:800px){
+  .home-page .header-inner,.internal-page .header-inner{min-height:44px}
+  .home-page .menu-brand img,.internal-page .menu-brand img{width:82px}
+  .home-page .menu-toggle,.internal-page .menu-toggle{width:36px;height:30px;padding:6px}
+  .home-page .site-nav,.internal-page .site-nav{top:44px}
+}
