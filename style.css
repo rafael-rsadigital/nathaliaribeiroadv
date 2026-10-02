@@ -27,3 +27,4 @@ html.js .reveal.is-visible {
     will-change: auto;
   }
 }
+.practice-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:20px 0 6px}.practice-links a{color:var(--green);font-size:.74rem;font-weight:700;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}.practice-links a:hover,.practice-links a:focus{color:var(--gold)}.practice-featured .practice-links a{color:var(--gold-light)}.practice .text-link{display:inline-block;margin-top:18px}.footer-credit{color:#c1d2c9}.footer-credit a{display:inline;color:var(--gold-light);font-weight:700}.footer-credit a:hover,.footer-credit a:focus{color:var(--white)}
