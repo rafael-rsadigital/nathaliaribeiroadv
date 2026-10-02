@@ -126,3 +126,33 @@ html.js .reveal.is-visible {
   .home-page #diferenciais{background:linear-gradient(90deg,rgba(16,45,39,.94),rgba(16,45,39,.82)),url('assets/background-direito-previdenciario.jpg') center/cover;color:var(--white)}
 }
 @media(min-width:801px){.home-page .hero-copy{transform:translateY(-58px)}}
+
+/* Compactação e replicação da estrutura visual da Home. */
+@media(min-width:801px){
+  .home-page .hero,.home-page .hero-grid{min-height:680px}
+  .home-page .hero-grid{padding-block:94px 66px}
+  .home-page .hero-copy{transform:none;align-self:center}
+  .home-page .hero-portrait{bottom:0}
+}
+.internal-page .site-header{position:absolute;top:0;left:0;width:100%;z-index:10;background:transparent;border:0;box-shadow:none;backdrop-filter:none}
+.internal-page .site-header.is-scrolled{position:fixed;background:rgba(16,45,39,.92);box-shadow:0 5px 20px rgba(23,32,31,.2);backdrop-filter:blur(10px)}
+.internal-page .header-inner{min-height:82px;justify-content:flex-end}
+.internal-page .menu-brand{display:none;position:absolute;left:0;top:50%;transform:translateY(-50%)}
+.internal-page .site-header.is-scrolled .menu-brand{display:block}
+.internal-page .menu-brand img{width:112px;height:auto;filter:brightness(0) invert(1)}
+.internal-page .menu-toggle{display:inline-flex;position:relative;z-index:2;width:48px;height:42px;padding:10px;flex-direction:column;justify-content:center;gap:5px;border:1px solid rgba(255,255,255,.72);color:var(--white);background:rgba(16,45,39,.28)}
+.internal-page .menu-toggle span{display:block;width:100%;height:2px;background:currentColor;transition:transform .2s ease,opacity .2s ease}
+.internal-page .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.internal-page .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.internal-page .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.internal-page .site-nav{display:none;position:absolute;top:82px;right:20px;width:min(280px,calc(100% - 40px));padding:20px;background:rgba(16,45,39,.98);border:1px solid rgba(255,255,255,.18);box-shadow:0 14px 30px rgba(0,0,0,.2);flex-direction:column;align-items:flex-start;gap:15px}
+.internal-page .site-nav.is-open{display:flex}
+.internal-page .internal-hero{position:relative;min-height:680px;padding:140px 0 72px;display:flex;align-items:center;overflow:hidden;background:var(--green-deep)}
+.internal-page .internal-hero::after{content:"";position:absolute;top:0;right:0;bottom:0;width:52%;background:linear-gradient(90deg,var(--green-deep) 0%,rgba(16,45,39,.74) 18%,rgba(16,45,39,.18) 72%,rgba(16,45,39,.35)),url('../assets/background-direito-previdenciario.jpg') center/cover;filter:brightness(.78)}
+.internal-page .internal-hero .container{position:relative;z-index:1;width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+.internal-page .internal-hero .container>*{max-width:560px}
+.internal-page .internal-brand{display:block;width:max-content;margin-bottom:18px}.internal-page .internal-brand img{width:180px;height:auto;filter:brightness(0) invert(1);opacity:.96}
+.internal-page .internal-hero h1{font-size:clamp(2rem,3.35vw,3rem);max-width:550px;margin-bottom:18px}.internal-page .internal-hero p{font-size:1.02rem;max-width:500px}
+@media(max-width:800px){
+ .internal-page .site-header{position:absolute}.internal-page .site-header.is-scrolled{position:fixed}.internal-page .header-inner{min-height:72px}.internal-page .site-nav{top:72px;right:16px;width:calc(100% - 32px)}.internal-page .menu-brand{display:none}
+ .internal-page .internal-hero{min-height:650px;padding:118px 0 58px;background:linear-gradient(90deg,rgba(16,45,39,.88),rgba(16,45,39,.45)),url('../assets/background-direito-previdenciario.jpg') center/cover;align-items:flex-end}
+ .internal-page .internal-hero::after{display:none}.internal-page .internal-hero .container>*{max-width:100%}.internal-page .internal-brand img{width:150px}.internal-page .internal-hero h1{font-size:clamp(1.65rem,7vw,2.45rem);margin-bottom:14px}.internal-page .internal-hero p{font-size:.94rem}
+}
