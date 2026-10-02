@@ -25,3 +25,10 @@
 }
 @media(min-width:801px){.internal-page .internal-hero::after{filter:brightness(.62)}}
 @media(max-width:800px){.internal-page .internal-hero{background-image:linear-gradient(90deg,rgba(0,0,0,.54) 0%,rgba(0,0,0,.3) 62%,rgba(0,0,0,.18) 100%),url('../assets/dra-nathalia-ribeiro.png')}}
+/* Mesmo enquadramento da foto da Home nas primeiras seções internas. */
+@media(min-width:801px){
+  .internal-page .internal-hero::before{content:"";position:absolute;top:0;right:47%;bottom:0;width:30%;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--green-deep) 0%,rgba(16,45,39,.84) 18%,rgba(16,45,39,.2) 75%,transparent)}
+  .internal-page .internal-hero::after{width:53%;background:url('../assets/dra-nathalia-ribeiro.png') center top/cover;filter:brightness(.62);z-index:0}
+}
+@media(max-width:800px){.internal-page .internal-hero{background-position:61% 42%}}
+@media(max-width:430px){.internal-page .internal-hero{background-position:61% 40%}}
