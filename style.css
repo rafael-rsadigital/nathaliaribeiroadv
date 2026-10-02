@@ -165,3 +165,10 @@ html.js .reveal.is-visible {
   .home-page .hero-brand,.internal-page .internal-brand{display:none}
   .home-page .site-nav,.internal-page .site-nav{top:72px;right:16px}
 }
+@media(max-width:800px){
+  .home-page .site-header,.internal-page .site-header{background:transparent;border:0;box-shadow:none;padding-top:8px}
+  .home-page .header-inner,.internal-page .header-inner{min-height:56px;padding-inline:14px;background:var(--green);box-shadow:0 4px 12px rgba(0,0,0,.14)}
+  .home-page .menu-brand img,.internal-page .menu-brand img{width:108px}
+  .home-page .menu-toggle,.internal-page .menu-toggle{width:42px;height:36px;padding:8px}
+  .home-page .site-nav,.internal-page .site-nav{top:64px}
+}
