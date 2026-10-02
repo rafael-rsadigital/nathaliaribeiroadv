@@ -191,3 +191,9 @@ html.js .reveal.is-visible {
   .home-page .menu-toggle,.internal-page .menu-toggle{width:36px;height:30px;padding:6px}
   .home-page .site-nav,.internal-page .site-nav{top:44px}
 }
+@media(min-width:801px){
+  .home-page .hero-portrait img{filter:brightness(.62)}
+}
+@media(max-width:800px){
+  .home-page .hero{background-image:linear-gradient(90deg,rgba(0,0,0,.54) 0%,rgba(0,0,0,.3) 62%,rgba(0,0,0,.18) 100%),url('assets/dra-nathalia-ribeiro.png')}
+}
