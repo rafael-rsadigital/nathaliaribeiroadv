@@ -172,3 +172,8 @@ html.js .reveal.is-visible {
   .home-page .menu-toggle,.internal-page .menu-toggle{width:42px;height:36px;padding:8px}
   .home-page .site-nav,.internal-page .site-nav{top:64px}
 }
+@media(max-width:800px){
+  .home-page .site-header,.internal-page .site-header{background:var(--green);padding-top:0;box-shadow:0 4px 12px rgba(0,0,0,.14)}
+  .home-page .header-inner,.internal-page .header-inner{min-height:56px;padding-inline:0;background:transparent;box-shadow:none}
+  .home-page .site-nav,.internal-page .site-nav{top:56px}
+}
