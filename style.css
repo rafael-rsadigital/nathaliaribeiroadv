@@ -125,3 +125,4 @@ html.js .reveal.is-visible {
   .home-page .hero-portrait img{height:100%;min-height:100%;filter:brightness(.72);object-position:center top}
   .home-page #diferenciais{background:linear-gradient(90deg,rgba(16,45,39,.94),rgba(16,45,39,.82)),url('assets/background-direito-previdenciario.jpg') center/cover;color:var(--white)}
 }
+@media(min-width:801px){.home-page .hero-copy{transform:translateY(-58px)}}
