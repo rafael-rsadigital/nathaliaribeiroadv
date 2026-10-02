@@ -9,3 +9,17 @@
   .internal-page .internal-hero::after{display:none}
   .internal-page .internal-brand{display:none}
 }
+
+/* Barra superior própria das páginas internas, com links entre áreas jurídicas. */
+@media(min-width:801px){
+  .internal-page .site-header{position:relative;top:auto;left:auto;background:var(--green);border-bottom:1px solid rgba(255,255,255,.14);box-shadow:0 4px 14px rgba(0,0,0,.12);backdrop-filter:blur(10px)}
+  .internal-page .site-header.is-scrolled{position:relative;background:var(--green-deep)}
+  .internal-page .header-inner{min-height:72px}
+  .internal-page .menu-brand{display:block;position:static;transform:none;margin-right:auto}
+  .internal-page .menu-brand img{width:120px}
+  .internal-page .menu-toggle{display:none}
+  .internal-page .site-nav{display:flex;position:static;width:auto;padding:0;background:transparent;border:0;box-shadow:none;flex-direction:row;align-items:center;gap:24px;color:var(--white)}
+  .internal-page .site-nav a{font-size:.76rem;text-decoration:none}
+  .internal-page .site-nav a:hover,.internal-page .site-nav a:focus{color:var(--gold-light)}
+  .internal-page .internal-hero{min-height:680px}
+}
