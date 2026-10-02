@@ -156,3 +156,12 @@ html.js .reveal.is-visible {
  .internal-page .internal-hero{min-height:650px;padding:118px 0 58px;background:linear-gradient(90deg,rgba(16,45,39,.88),rgba(16,45,39,.45)),url('../assets/background-direito-previdenciario.jpg') center/cover;align-items:flex-end}
  .internal-page .internal-hero::after{display:none}.internal-page .internal-hero .container>*{max-width:100%}.internal-page .internal-brand img{width:150px}.internal-page .internal-hero h1{font-size:clamp(1.65rem,7vw,2.45rem);margin-bottom:14px}.internal-page .internal-hero p{font-size:.94rem}
 }
+@media(max-width:800px){
+  .home-page .site-header,.internal-page .site-header{position:relative;top:auto;left:auto;background:var(--green);border-bottom:1px solid rgba(255,255,255,.16);box-shadow:0 4px 14px rgba(0,0,0,.14);backdrop-filter:none}
+  .home-page .site-header.is-scrolled,.internal-page .site-header.is-scrolled{position:relative;background:var(--green)}
+  .home-page .header-inner,.internal-page .header-inner{min-height:72px;justify-content:space-between}
+  .home-page .menu-brand,.internal-page .menu-brand{display:block;position:static;transform:none;margin-right:auto}
+  .home-page .menu-brand img,.internal-page .menu-brand img{width:128px;height:auto;filter:brightness(0) invert(1)}
+  .home-page .hero-brand,.internal-page .internal-brand{display:none}
+  .home-page .site-nav,.internal-page .site-nav{top:72px;right:16px}
+}
