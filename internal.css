@@ -50,3 +50,29 @@
   .internal-page .internal-hero::before{right:47%;width:16%;background:linear-gradient(90deg,var(--green-deep) 0%,rgba(16,45,39,.85) 18%,rgba(16,45,39,.2) 75%,transparent)}
   .internal-page .internal-hero::after{background:linear-gradient(270deg,var(--green-deep) 0%,rgba(16,45,39,.7) 10%,transparent 75%),url('../assets/dra-nathalia-ribeiro.png') center top/cover;filter:brightness(.62);box-shadow:inset -30px 0 35px -35px var(--green-deep)}
 }
+
+/* O bloco de foto interno usa a mesma geometria do .hero-portrait da Home. */
+@media(min-width:801px){
+  .internal-page .internal-hero::before,
+  .internal-page .internal-hero::after{display:none}
+  .internal-page .internal-hero{min-height:680px;padding:0;display:block;background:var(--green-deep)}
+  .internal-page .internal-hero .hero-grid{display:flex;position:relative;align-items:center;min-height:680px;padding:94px 0 66px}
+  .internal-page .internal-hero .hero-copy{position:relative;z-index:2;max-width:560px;align-self:center}
+  .internal-page .internal-hero .hero-brand{display:block;width:max-content;margin:0 0 20px}
+  .internal-page .internal-hero .hero-brand img{width:180px;height:auto;filter:brightness(0) invert(1);opacity:.96}
+  .internal-page .internal-hero h1{font-size:clamp(2rem,3.35vw,3rem);max-width:550px;margin-bottom:18px}
+  .internal-page .internal-hero .hero-lede{font-size:1.02rem;max-width:500px;color:var(--green-soft)}
+  .internal-page .internal-hero .hero-portrait{display:block;position:absolute;top:0;right:0;bottom:0;width:53%;height:auto;max-height:none;margin:0;z-index:1}
+  .internal-page .internal-hero .hero-portrait::before,
+  .internal-page .internal-hero .hero-portrait::after{content:"";position:absolute;top:0;bottom:0;width:30%;z-index:1;pointer-events:none}
+  .internal-page .internal-hero .hero-portrait::before{left:0;background:linear-gradient(90deg,var(--green-deep) 0%,rgba(16,45,39,.85) 18%,rgba(16,45,39,.2) 75%,transparent)}
+  .internal-page .internal-hero .hero-portrait::after{right:0;background:linear-gradient(270deg,var(--green-deep) 0%,rgba(16,45,39,.7) 10%,transparent 75%)}
+  .internal-page .internal-hero .hero-portrait img{display:block;width:100%;height:100%;min-height:100%;object-fit:cover;object-position:center top;filter:brightness(.62);box-shadow:inset 30px 0 35px -35px var(--green-deep),inset -30px 0 35px -35px var(--green-deep)}
+}
+@media(max-width:800px){
+  .internal-page .internal-hero .hero-grid{display:flex;align-items:flex-end;min-height:650px;padding:88px 0 58px}
+  .internal-page .internal-hero .hero-copy{max-width:100%}
+  .internal-page .internal-hero .hero-brand{display:none}
+  .internal-page .internal-hero .hero-portrait{display:none}
+  .internal-page .internal-hero .hero-lede{font-size:.94rem}
+}
