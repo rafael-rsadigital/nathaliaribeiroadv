@@ -44,3 +44,9 @@
   .internal-page .site-nav.is-open{display:flex}
   .internal-page .menu-toggle{display:inline-flex}
 }
+
+/* Mesmo tratamento de imagem da Home: entrada suave à esquerda e fechamento à direita. */
+@media(min-width:801px){
+  .internal-page .internal-hero::before{right:47%;width:16%;background:linear-gradient(90deg,var(--green-deep) 0%,rgba(16,45,39,.85) 18%,rgba(16,45,39,.2) 75%,transparent)}
+  .internal-page .internal-hero::after{background:linear-gradient(270deg,var(--green-deep) 0%,rgba(16,45,39,.7) 10%,transparent 75%),url('../assets/dra-nathalia-ribeiro.png') center top/cover;filter:brightness(.62);box-shadow:inset -30px 0 35px -35px var(--green-deep)}
+}
